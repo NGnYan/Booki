@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -26,7 +26,7 @@
 
       <header>
         <nav class="between-center mobile-nav">
-          <img src="./images/logo/Booki.png" id="logo-img" />
+          <img src="./images/logo/Booki.png" id="logo-img" alt="logo" />
           <div class="nav-links">
             <ul>
               <li><a href="#">Hébergements</a></li>
@@ -49,44 +49,42 @@
         </section>
 
         <!-- Search bar -->
-         <form action="#" method="get">
+        <form action="#" method="get" class="search-container">
           <div class="input-box">
-          <div class="align-center icon-loca"><i class="fa-solid fa-location-dot "></i></div>
-          <input type="text" placeholder="Destination" class="search-input" />
-          <button class="search-btn">Rechercher</button>
-        </div>
+            <div class="align-center icon-loca">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <input type="text" placeholder="Destination" class="search-input" />
+            <button class="search-btn">Rechercher</button>
+          </div>
         </form>
 
         <!-- Filter -->
-        <section class="start-align filter-container">
-         
+        <section class="filter-container">
           <h3 class="section-subtitle">Filtres</h3>
-          
 
-         
-            <div>
-          <button class="filter-btn">
-            <i class="fa-solid fa-money-bill-wave"></i> Économique
-          </button>
-          <button class="filter-btn">
-            <i class="fa-solid fa-person"></i> Familial
-          </button>
+          <div class="filter-btn-container">
+            <button class="filter-btn">
+              <i class="fa-solid fa-money-bill-wave"></i> Économique
+            </button>
+            <button class="filter-btn">
+              <i class="fa-solid fa-person"></i> Familial
+            </button>
+            <button class="filter-btn">
+              <i class="fa-solid fa-heart"></i> Romantique
+            </button>
+            <button class="filter-btn">
+              <i class="fa-solid fa-fire"></i> Nos pépites
+            </button>
           </div>
-          <div>
-          <button class="filter-btn">
-            <i class="fa-solid fa-heart"></i> Romantique
-          </button>
-          <button class="filter-btn">
-            <i class="fa-solid fa-fire"></i> Nos pépites
-          </button>
-          </div>
-       
         </section>
         <!-- Infobar-->
 
         <section class="start-align infobar-container">
           <i class="fa-solid fa-info info-icon"></i>
-          <p class="section-txt">Plus de 500 logements sont disponibles dans cette ville</p>
+          <p class="section-txt">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
         </section>
 
         <!-- Section group -->
@@ -101,7 +99,7 @@
               </h2>
             </div>
             <div class="hebergement-cards main-bg-color">
-             <div class="cards-container">  <a href="#" class="main-bg-color">
+              <a href="#" class="main-bg-color">
                 <article class="card">
                   <img
                     src="./images/hebergements/fred-kleber.jpg"
@@ -184,9 +182,7 @@
                   </div>
                 </article>
               </a>
-              </div>
 
-              <div class="cards-container">
               <a href="#" class="main-bg-color">
                 <article class="card">
                   <img
@@ -256,7 +252,7 @@
                         Nuit à partir de 23<span class="euro">€</span>
                       </p>
                     </div>
-                    
+
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -273,7 +269,7 @@
               </a>
             </div>
             <button class="main-bg-color display-btn">
-              <h3 class="main-bg-color section-subtitle">Afficher plus</h3>
+              <span class="main-bg-color section-subtitle">Afficher plus</span>
             </button>
           </section>
 
@@ -282,7 +278,10 @@
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title main-bg-color">Les plus populaires</h2>
-              <i class="fa-solid fa-chart-line main-bg-color" aria-hidden="true"></i>
+              <i
+                class="fa-solid fa-chart-line main-bg-color"
+                aria-hidden="true"
+              ></i>
             </div>
             <div class="populaires-cards main-bg-color">
               <a href="#">
@@ -374,51 +373,58 @@
 
         <!-- Section activités -->
         <section class="activity">
-          <div class="activity-title"><h2>Activités à Marseille</h2></div>
+          <div class="activity-title">
+            <h2>Activités à Marseille</h2>
+          </div>
           <section class="activity-cards align-center">
             <a href="#">
               <article class="card">
-                <img src="./images//activites/reno-laithienne.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit"
-                  />
-                <div class="card-txt"> 
+                <img
+                  src="./images//activites/reno-laithienne.jpg"
+                  alt="Image de la chambre d'hôtel montrant un lit"
+                />
+                <div class="card-txt">
                   <h3 class="card-title">Vieux-Port</h3>
                 </div>
               </article>
             </a>
 
-          <a href="#">
-            <article class="card">
-              <img src="./images/activites/paul-hermann.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit"
-                  />
-              <div class="card-txt"> 
-                <h3 class="card-title">Fort de Pomègues</h3>
-              </div>
-            </article>
-          </a>
+            <a href="#">
+              <article class="card">
+                <img
+                  src="./images/activites/paul-hermann.jpg"
+                  alt="Image de la chambre d'hôtel montrant un lit"
+                />
+                <div class="card-txt">
+                  <h3 class="card-title">Fort de Pomègues</h3>
+                </div>
+              </article>
+            </a>
 
-          <a href="#">
-            <article class="card">
-              <img src="./images/activites/kilyan-sockalingum.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit"
-                  />
-              <div class="card-txt"> 
-                <h3 class="card-title">Parc national des Calanques</h3>
-              </div>
-            </article>
-          </a>
+            <a href="#">
+              <article class="card">
+                <img
+                  src="./images/activites/kilyan-sockalingum.jpg"
+                  alt="Image de la chambre d'hôtel montrant un lit"
+                />
+                <div class="card-txt">
+                  <h3 class="card-title">Parc national des Calanques</h3>
+                </div>
+              </article>
+            </a>
 
-           <a href="#">
-            <article class="card">
-              <img src="./images/activites/florian-wehde.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit"
-                  />
-              <div class="card-txt"> 
-                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-              </div>
-            </article>
-          </a>
+            <a href="#">
+              <article class="card">
+                <img
+                  src="./images/activites/florian-wehde.jpg"
+                  alt="Image de la chambre d'hôtel montrant un lit"
+                />
+                <div class="card-txt">
+                  <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                </div>
+              </article>
+            </a>
+          </section>
         </section>
       </main>
 
