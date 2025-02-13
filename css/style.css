@@ -171,7 +171,7 @@ body {
 }
 
 .search-input {
-  width: 25%;
+  width: 200px;
   height: 48px;
 
   padding: 0 15px;
@@ -522,7 +522,7 @@ a {
   /***** Search bar *****/
 
   .input-box {
-    width: 45%;
+    width: 60%;
     height: 42px;
 
     position: relative;
@@ -546,7 +546,6 @@ a {
   }
 
   .search-input {
-    width: 25%;
     height: 40px;
 
     padding: 0 15px;
@@ -690,15 +689,18 @@ a {
   }
 
   .nav-links {
+    width: 100%;
     padding-top: 20px;
   }
 
   .nav-links ul {
     margin: 0;
-    padding: 0;
+    padding: 10px;
 
     display: flex;
     justify-content: space-evenly;
+
+    border-bottom: 3px solid var(--main-bg-color);
   }
 
   .nav-links ul li a {
