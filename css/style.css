@@ -894,13 +894,17 @@ a {
 
   .activity .card {
     width: 85vw;
-    height: 20px;
+    height: 200px;
 
-    max-width: 350px;
+    max-width: none;
   }
 
   .activity img {
     height: 150px;
+  }
+
+  .activity .card-title {
+    margin-top: 10px;
   }
 
   /***** Footer *****/
