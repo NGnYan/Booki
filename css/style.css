@@ -705,7 +705,12 @@ a {
     text-align: center;
   }
 
+  .nav-links ul li::after {
+    display: none;
+  }
+
   .nav-links ul li:hover::after {
+    display: block;
     top: 39px;
   }
 
