@@ -292,7 +292,7 @@ a {
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .euro {
@@ -326,22 +326,18 @@ a {
 }
 
 .hebergement-cards {
-  height: auto;
-
-  padding: 30px 0px 0px 0px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  gap: 30px;
+  gap: 20px;
+  padding-top: 20px;
 }
 
 .hebergement-cards .card {
   height: auto;
   width: calc(33.33% - 10px);
 
-  min-width: 230px;
+  min-width: 250px;
 
   box-sizing: border-box;
   overflow: hidden;
@@ -485,7 +481,7 @@ a {
 
 .footer-container {
   margin: 50px 50px 0 50px;
-  padding: 10px 0px 15px 20px;
+  padding: 10px 80px 15px 20px;
 
   display: flex;
   justify-content: flex-start;
@@ -509,11 +505,6 @@ a {
     padding-top: 5px;
 
     cursor: pointer;
-  }
-  /***** Hebergements *****/
-
-  .hebergements-and-populaires {
-    flex-direction: column;
   }
 
   /***** Search bar *****/
@@ -584,6 +575,12 @@ a {
     padding: 10px;
   }
 
+  /***** Hebergements et populaires *****/
+
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
   /***** Hebergements *****/
 
   .hebergements {
@@ -591,16 +588,18 @@ a {
     padding: 5px;
   }
 
-  /* .hebergement-cards {
+  .hebergement-cards {
     padding: 30px 0px 10px 0px;
   }
 
   .hebergement-cards .card {
-    min-width: 260px;
+    min-width: 180px;
+    max-width: 180px;
+    font-size: 0.8em;
   }
 
-  .hebergement-cards .card-title {
-    padding-top: 5px;
+  .hebergement-cards img {
+    height: 90px;
   }
 
   .hebergement-cards .card-rating {
@@ -609,22 +608,6 @@ a {
 
   .display-btn .section-subtitle {
     color: black;
-  }*/
-
-  .hebergement-cards {
-    height: auto;
-    padding: 30px 0px 0px 0px;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
-
-  .hebergement-cards .card {
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
   }
 
   /***** Populaires *****/
@@ -654,8 +637,12 @@ a {
   .activity .card {
     width: calc(25% - 10px);
     min-width: 200px;
-    max-width: 150px;
+    max-width: 200px;
     height: 320px;
+  }
+
+  .activity a {
+    width: 30%;
   }
 
   .activity img {
