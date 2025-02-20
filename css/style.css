@@ -622,6 +622,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
 
+    font-size: 0.8em;
     gap: 30px;
   }
 
@@ -664,8 +665,6 @@ a {
   }
 
   .activity a {
-    width: 30%;
-
     display: flex;
     justify-content: center;
   }
